@@ -49,6 +49,10 @@ export const Subtitle = styled.div`
         margin-top:2rem;
         font-size:0.8rem;
     }
+
+    @media (max-width: 413px) and (min-width: 375px) {
+        font-size: 1.6rem;
+    }
 `
 
 export const ContainerCertified = styled.div`
@@ -76,7 +80,8 @@ export const Container = styled.div`
     position: relative;
     align-items: center;
     justify-content:center;
-    padding: 9rem 0rem 0rem 0rem;
+    padding: 9rem 0rem 2rem 0rem;
+    overflow: hidden;
 
 `
 
@@ -92,6 +97,7 @@ export const FontLogo = styled.img`
 
     @media (max-width: 413px) and (min-width: 375px) {
         max-width: 13rem;
+        transform: translate(-56px, -80px);
     }
 
     
@@ -100,6 +106,7 @@ export const FontLogo = styled.img`
 export const Propeller = styled.img`
     max-width: 16rem;
     animation: ${Logospin} infinite 15s linear;
+    z-index:1;
 
     @media (max-width: 428px) and (min-width: 414px) {
         max-width: 15rem;
@@ -113,6 +120,7 @@ export const Propeller = styled.img`
 
 export const ContainerWaves = styled.div`
     overflow:hidden;
+    z-index:0;
    
 `
 

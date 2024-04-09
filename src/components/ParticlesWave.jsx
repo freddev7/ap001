@@ -15,13 +15,13 @@ const ParticlesWave = () => {
 
         const AMOUNTX = 360; // Número de partículas ao longo do eixo X
         const AMOUNTY = 105; // Número de partículas ao longo do eixo Y
-        const SEPARATION = 1; // Espaçamento entre as partículas
+        const SEPARATION = 1.4; // Espaçamento entre as partículas
 
         const PI2 = Math.PI * 2;
         const canvas = document.createElement("canvas");
         const context = canvas.getContext("2d");
-        canvas.width = 74;
-        canvas.height = 74;
+        canvas.width = 104;
+        canvas.height = 104;
         context.fillStyle = "#bd1622"; // Cor das partículas
         context.beginPath();
         context.arc(32, 32, 30, 0, PI2); // Raio do círculo
