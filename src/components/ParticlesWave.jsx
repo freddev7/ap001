@@ -12,6 +12,7 @@ const ParticlesWave = () => {
         camera.rotation.x = -1.1;
         const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
         renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio * 2);
 
         const AMOUNTX = 360; // Número de partículas ao longo do eixo X
         const AMOUNTY = 105; // Número de partículas ao longo do eixo Y
@@ -20,11 +21,11 @@ const ParticlesWave = () => {
         const PI2 = Math.PI * 2;
         const canvas = document.createElement("canvas");
         const context = canvas.getContext("2d");
-        canvas.width = 104;
-        canvas.height = 104;
+        canvas.width = 512;
+        canvas.height = 512;
         context.fillStyle = "#bd1622"; // Cor das partículas
         context.beginPath();
-        context.arc(32, 32, 30, 0, PI2); // Raio do círculo
+        context.arc(256, 256, 240, 0, PI2); // Raio do círculo
         context.fill();
 
         const texture = new THREE.CanvasTexture(canvas);
