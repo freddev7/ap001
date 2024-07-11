@@ -1,6 +1,6 @@
 export const navbarData = [
 	{
-		text: 'ABOUT',
+		text: 'SOBRE',
 		id: 'about',
 		spy: true,
 		duration: 500,
@@ -10,25 +10,25 @@ export const navbarData = [
 		to: 'about',
 	},
 	{
-		text: 'BENEFITS',
+		text: 'USO',
 		spy: true,
 		duration: 500,
 		smooth: true,
 		exact: 'true',
 		offset: -100,
-		to: 'logos',
+		to: 'use',
 	},
 	{
-		text: 'USAGE',
+		text: 'BENEFÍCIOS',
 		spy: true,
 		duration: 500,
 		smooth: true,
 		exact: 'true',
 		offset: -80,
-		to: 'medias',
+		to: 'benefits',
 	},
 	{
-		text: 'COMPOSITION',
+		text: 'QUEM SOMOS',
 		spy: true,
 		duration: 500,
 		smooth: true,

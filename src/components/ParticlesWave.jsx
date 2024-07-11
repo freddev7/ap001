@@ -15,8 +15,8 @@ const ParticlesWave = () => {
         renderer.setPixelRatio(window.devicePixelRatio * 2);
 
         const AMOUNTX = 360; // Número de partículas ao longo do eixo X
-        const AMOUNTY = 105; // Número de partículas ao longo do eixo Y
-        const SEPARATION = 1.4; // Espaçamento entre as partículas
+        const AMOUNTY = 115; // Número de partículas ao longo do eixo Y
+        const SEPARATION = 1.2; // Espaçamento entre as partículas
 
         const PI2 = Math.PI * 2;
         const canvas = document.createElement("canvas");
@@ -31,7 +31,7 @@ const ParticlesWave = () => {
         const texture = new THREE.CanvasTexture(canvas);
 
         const material = new THREE.PointsMaterial({
-            size: 0.3, // Tamanho das partículas
+            size: 0.2, // Tamanho das partículas
             sizeAttenuation: true,
             map: texture,
             transparent: true,
@@ -47,7 +47,7 @@ const ParticlesWave = () => {
             for (let iy = 0; iy < AMOUNTY; iy++) {
                 const x = ix * SEPARATION - (AMOUNTX * SEPARATION) / 2;
                 const y = 0; // Ajuste a posição y conforme necessário
-                const z = iy * SEPARATION - (AMOUNTY * SEPARATION - 10);
+                const z = iy * SEPARATION - (AMOUNTY * SEPARATION - 7);
 
                 positions.push(x, y, z);
                 colors.push(1, 1, 1); // Cor das partículas (branco)
@@ -69,14 +69,14 @@ const ParticlesWave = () => {
             const amplitude = 3; // Ajuste a amplitude conforme necessário
             const frequency = 0.15; // Ajuste a frequência conforme necessário
 
-            for (let i = 0; i < positions.length; i += 3) {
+            for (let i = 3; i < positions.length; i += 3) {
                 const x = positions[i];
-                const y = Math.sin((x * 0.5 + time) * frequency) * amplitude;
+                const y = Math.sin((x * 0.5 + time) * frequency) * amplitude ;
                 const z = positions[i + 2];
 
-                const offsetY = Math.cos((z * 0.6 + time) * frequency) * amplitude;
+                const offsetX = Math.cos((z * 0.6 + time) * frequency ) * amplitude + 5 ;
 
-                positions[i + 1] = y + offsetY;
+                positions[i + 1] = y + offsetX;
                 positions[i + 2] = z;
             }
 

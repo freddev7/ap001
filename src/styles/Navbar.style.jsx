@@ -45,25 +45,25 @@ export const NavIcon = styled.img`
 		margin-right:37rem;
 	}
 	@media screen and (max-width: 1239px) and (min-width: 1024px) {
-		margin-right:20rem;
+		margin-right:16rem;
 	}
-	@media screen and (max-width: 1023px) and (min-width: 960px) {
-		margin-right:20rem;
+	@media screen and (max-width: 1023px) and (min-width: 961px) {
+		margin-right:14rem;
 	}
-	@media screen and (max-width: 961px) and (min-width: 769px) {
+	@media screen and (max-width: 960px) and (min-width: 769px) {
 		margin-right:40rem;
 	}
 	@media screen and (max-width: 768px) and (min-width: 591px) {
 		margin-right:28rem;
 	}
-	@media screen and (max-width: 590px) and (min-width: 429px) {
+	@media screen and (max-width: 590px) and (min-width: 431px) {
 		margin-right:18rem;
 	}
-	@media screen and (max-width: 428px) and (min-width: 390px){
-		margin-right:16rem;
+	@media screen and (max-width: 430px) and (min-width: 390px){
+		margin-right:17rem;
 	}
 	@media screen and (max-width: 389px) and (min-width: 320px){
-		margin-right:12rem;
+		margin-right:14rem;
 	}
 `;
 export const MobileIcon = styled.div`
@@ -146,7 +146,8 @@ export const NavLinks = styled(LinkScroll)`
 	height: 100%;
 	
 	&.active {
-		text-shadow: 0 0 20px #bd1622, 0 0 15px #bd1622, 0 0 10px #bd1622;
+		color: #bd1622;
+		transition: all 0.3s ease;
 		@media screen and (min-width: 960px) {
 			border-bottom: 1px solid #bd1622;
 			border-image: linear-gradient(to left, #ffffff , #bd1622) 1;
