@@ -26,6 +26,7 @@ export const NavbarContainer = styled.div`
 	display: flex;
 	justify-content:end;
 	height: 80px;
+	z-index: 50;
 `;
 
 export const NavLogo = styled(Link)`
@@ -88,7 +89,7 @@ export const NavMenu = styled.ul`
 	list-style: none;
 	text-align: center;
 	width: 100%;
-	z-index: 49;
+	z-index: 50;
 	@media screen and (max-width: 960px) {
 		flex-direction: column;
 		width: 100%;

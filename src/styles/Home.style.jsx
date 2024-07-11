@@ -54,6 +54,7 @@ export const Subtitle = styled.div`
     padding: 1rem 13rem 0rem 13rem;
     overflow: hidden;
     font-size:1.8rem;
+    z-index: 1;
 
     p {
         margin-top:1rem;
@@ -98,7 +99,7 @@ export const ContainerCertified = styled.div`
     align-items: center;
     justify-content:center;
     padding: 2rem 0rem 0rem 0rem; 
-    z-index: 6;
+    z-index: 1;
 
 `
 
@@ -106,13 +107,13 @@ export const CertifiedCircle = styled.img`
     max-width:4rem;
     position:absolute;
     animation: ${Logospin} infinite 10s linear;
-    z-index:6;
+   
 `
 
 export const CertifiedCheck = styled.img`
     animation: ${Checkrotate} infinite 8s linear;
     max-width:4rem;
-    z-index: 6;
+    
 `
 
 export const Container = styled.div`
