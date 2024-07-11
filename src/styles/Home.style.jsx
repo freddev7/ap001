@@ -46,6 +46,7 @@ export const Header = styled.div`
     font-size: 2.4rem; 
     text-align: center; 
     padding: 2rem 0rem 0rem 0rem; 
+    z-index: 9;
     
 `
 
@@ -105,12 +106,13 @@ export const CertifiedCircle = styled.img`
     max-width:4rem;
     position:absolute;
     animation: ${Logospin} infinite 10s linear;
+    z-index:6;
 `
 
 export const CertifiedCheck = styled.img`
     animation: ${Checkrotate} infinite 8s linear;
     max-width:4rem;
-    z-index: 1;
+    z-index: 6;
 `
 
 export const Container = styled.div`
@@ -468,7 +470,7 @@ export const CanvasCont = styled.div`
     z-index: 6;
 
     canvas { 
-        height:80vh !important;
+        height:70vh !important;
     }
      
 `
