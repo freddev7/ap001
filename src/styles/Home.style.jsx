@@ -470,7 +470,7 @@ export const CanvasCont = styled.div`
     z-index: 6;
 
     canvas { 
-        height:70vh !important;
+        height:60vh !important;
     }
      
 `
