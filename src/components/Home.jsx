@@ -50,7 +50,7 @@ function Home() {
                         <CertifiedCheck src={certifiedcheck} alt="certifiedcheck"></CertifiedCheck>
                     </ContainerCertified>
                     <Subtitle>
-                        {/* <span>
+                        <span>
                             <Typewriter
                                 words={['APROVADO PELA ANAC']}
                                 loop={false}
@@ -78,16 +78,16 @@ function Home() {
                                 cursorStyle='|'
                                 typeSpeed={10}
                             />
-                        </p> */}
+                        </p>
                     </Subtitle>
                 </Header>
                 <Container>
                     <FontLogo src={fontlogoproduct} alt="fontlogoproduct"></FontLogo>
                     <Propeller src={propeller} alt="propeller"></Propeller>
                 </Container>
-                {/* <ContainerWaves>
+                <ContainerWaves>
                     <ParticlesWave />
-                </ContainerWaves> */}
+                </ContainerWaves>
                 <AboutContainer id="about">
                     <div className="title_about_container">
                         <div data-aos="fade-down" data-aos-duration="1000" className="stroke"></div>
