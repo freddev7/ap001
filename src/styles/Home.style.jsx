@@ -111,7 +111,7 @@ export const CertifiedCircle = styled.img`
 `
 
 export const CertifiedCheck = styled.img`
-    animation: ${Checkrotate} infinite 8s linear;
+    /* animation: ${Checkrotate} infinite 8s linear; */
     max-width:4rem;
     
 `
