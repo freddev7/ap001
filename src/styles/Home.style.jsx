@@ -83,7 +83,7 @@ export const Subtitle = styled.div`
         }
     }
 
-    @media (max-width: 399px) and (min-width: 375px) {
+    @media (max-width: 399px) and (min-width: 320px) {
         padding: 1rem 1rem 0rem 1rem;
         
         p {
@@ -121,20 +121,21 @@ export const Container = styled.div`
     position: relative;
     align-items: center;
     justify-content:center;
-    padding: 8rem 0rem 2rem 0rem;
+    padding: 6rem 0rem 2rem 0rem;
     overflow: hidden;
     z-index:11;
 
 `
 
 export const FontLogo = styled.img`
-    max-width: 16rem;
+    max-width: 14rem;
     position: absolute;
-    transform: translate(-72px, -93px);
+    transform: translate(-65px, -76px);
     z-index: 10;
 
     @media (max-width: 430px) and (min-width: 414px) {
-        max-width: 15rem;
+        max-width: 13rem;
+        transform: translate(-56px, -80px);
     }
 
     @media (max-width: 413px) and (min-width: 375px) {
@@ -142,20 +143,29 @@ export const FontLogo = styled.img`
         transform: translate(-56px, -80px);
     }
 
+    @media (max-width: 374px) and (min-width: 320px) {
+        max-width: 12rem;
+        transform: translate(-56px, -70px);
+    }
     
 `
 
 export const Propeller = styled.img`
-    max-width: 16rem;
+    max-width: 17rem;
     animation: ${Logospin} infinite 15s linear;
+    transform: translate(0px, 0px);
     z-index:1;
 
     @media (max-width: 430px) and (min-width: 414px) {
-        max-width: 15rem;
+        max-width: 16rem;
     }
 
     @media (max-width: 413px) and (min-width: 375px) {
-        max-width: 13rem;
+        max-width: 16rem;
+    }
+
+    @media (max-width: 374px) and (min-width: 320px) {
+        max-width: 15rem;
     }
 
 `
@@ -410,7 +420,7 @@ export const AboutContainer = styled.div`
     }
 
 
-    @media (max-width: 413px) and (min-width: 375px) {
+    @media (max-width: 413px) and (min-width: 320px) {
         .stroke {
             width: 3rem;
         }  
@@ -469,15 +479,12 @@ export const Arrows = styled.div `
 
 export const CanvasCont = styled.div`
     z-index: 6;
+    margin-bottom: 2rem;
 
     canvas { 
-        height:60vh !important;
+        height:50vh !important;
     }
      
-`
-
-export const ContainerHelicopter = styled.div`
-    overflow: hidden;
 `
 
 export const GallonContainer = styled.div`
@@ -572,12 +579,18 @@ export const ProductContainer = styled.div`
     
 `
 
+export const IconAcessibility = styled.div`
+    font-size: 2.7rem;
+    color: #bd1622;
+    text-align:center;
+    margin-top: 2rem;  
+`
+
 export const TitleBenefits = styled.div`
     font-size: 1.5rem; 
     font-weight: 300;
     text-align: center;
     padding:0rem 2rem;
-
 
     @media (max-width: 768px) and (min-width: 375px) {
         text-align:start;
@@ -783,7 +796,7 @@ export const FormContent = styled.div`
 
     
 
-    @media (max-width: 768px) and (min-width: 375px) {
+    @media (max-width: 768px) and (min-width: 320px) {
         font-weight:300;
         padding: 0rem 1rem;
 
@@ -802,7 +815,7 @@ export const Icons = styled.div`
         display:flex;
         position: relative;
         right:0.5rem;
-        margin-top:2rem;
+        margin-top:1rem;
         font-size:2.7rem;
 
     & > a {
@@ -816,7 +829,7 @@ export const Icons = styled.div`
 `
 
 export const Footer = styled.div`
-        padding: 0rem 2rem 2rem 2rem;
+        padding: 1rem 2rem 1rem 2rem;
         display: flex;
         justify-content: center;
         align-items: center;

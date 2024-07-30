@@ -15,7 +15,7 @@ export const navbarData = [
 		duration: 500,
 		smooth: true,
 		exact: 'true',
-		offset: -100,
+		offset: -80,
 		to: 'use',
 	},
 	{

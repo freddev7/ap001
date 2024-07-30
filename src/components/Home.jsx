@@ -24,6 +24,8 @@ import { PiChartLineUpLight, PiShieldCheckLight, PiCheckSquareLight, PiCheckCirc
 import brazilflag from "../assets/brazilflag.svg"
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdOutline360 } from "react-icons/md";
+
 
 
 // ''Gostaria de informações (para)sobre a aquisição do produto'' whatsapp(CTA) formatação das informações layout
@@ -31,7 +33,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Icons, Footer, AuthProd } from "../styles/Home.style";
+import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Icons, Footer, AuthProd } from "../styles/Home.style";
+
 
 
 function Home() {
@@ -136,13 +139,16 @@ function Home() {
                 <TitleBenefits>
                     <p data-aos="fade-right" data-aos-duration="1000">PRODUTO DE ALTA PERFORMANCE PARA LIMPEZA DE AERONAVES</p>
                 </TitleBenefits>
+                <IconAcessibility>
+                    <MdOutline360 />
+                </IconAcessibility>
                 <CanvasCont>
-                    <Canvas camera={{ position: [650, 100, 300], fov: 20 }}>
-                        <OrbitControls enableZoom={false} autoRotate={true} />
+                    <Canvas camera={{ position: [430, 100, 300], fov: 20 }}>
+                        <OrbitControls enableZoom={false} autoRotate={true} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 2.2} />
                         <Suspense fallback={null}>
                             <Helicopter />
                         </Suspense>
-                        <Environment preset="sunset" />
+                        <Environment preset="city" />
                     </Canvas>
                 </CanvasCont>
                 <TitleBenefits id="use">
@@ -269,9 +275,6 @@ function Home() {
                     </div>
                 </FormContent>
                 <Footer>
-                    <Icons>
-                        <a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaInstagram /></a><a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaXTwitter /></a><a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaTiktok /></a>
-                    </Icons>
                     <img src={logoap} alt="logoap" />
                     <span>
                         <Typewriter
@@ -284,6 +287,9 @@ function Home() {
                             delaySpeed={1000}
                         />
                     </span>
+                    <Icons>
+                        <a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaInstagram /></a><a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaXTwitter /></a><a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaTiktok /></a>
+                    </Icons>
                 </Footer>
                 <AuthProd>
                     <div className="sign_prod">
