@@ -817,6 +817,7 @@ export const Footer = styled.div`
         p {
             text-transform: uppercase; 
             text-decoration: underline #bd1622;
+            -webkit-text-decoration: underline #bd1622;
             letter-spacing: 0.02rem;
             text-underline-offset: 4px;
             margin-bottom:0.6rem;
