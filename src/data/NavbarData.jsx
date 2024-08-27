@@ -6,7 +6,7 @@ export const navbarData = [
 		duration: 500,
 		smooth: true,
 		exact: 'true',
-		offset: -80,
+		offset: -110,
 		to: 'about',
 	},
 	{
@@ -15,7 +15,7 @@ export const navbarData = [
 		duration: 500,
 		smooth: true,
 		exact: 'true',
-		offset: -80,
+		offset: -130,
 		to: 'use',
 	},
 	{
@@ -33,7 +33,7 @@ export const navbarData = [
 		duration: 500,
 		smooth: true,
 		exact: 'true',
-		offset: -80,
-		to: 'web',
+		offset: -115,
+		to: 'us',
 	},
 ];

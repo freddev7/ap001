@@ -22,8 +22,7 @@ import { Environment, OrbitControls } from "@react-three/drei"
 import Helicopter from "../../public/Helicopter";
 import { PiChartLineUpLight, PiShieldCheckLight, PiCheckSquareLight, PiCheckCircleLight, PiCertificateLight } from "react-icons/pi";
 import brazilflag from "../assets/brazilflag.svg"
-import { FaInstagram, FaTiktok } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import instagram from "../assets/instagram.png"
 import { MdOutline360 } from "react-icons/md";
 
 
@@ -33,7 +32,7 @@ import { MdOutline360 } from "react-icons/md";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Icons, Footer, AuthProd } from "../styles/Home.style";
+import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Footer, AuthProd } from "../styles/Home.style";
 
 
 
@@ -55,13 +54,11 @@ function Home() {
                     <Subtitle>
                         <span>
                             <Typewriter
-                                words={['APROVADO PELA ANAC']}
-                                loop={false}
+                                words={['APROVADO PARA USO AERONÁUTICO DE ACORDO COM AS NORMAS DA ANAC']}
+                                loop={1}
                                 cursor
                                 cursorStyle='|'
                                 typeSpeed={100}
-                                deleteSpeed={50}
-                                delaySpeed={1000}
                             />
                         </span>
                         <p>
@@ -268,13 +265,14 @@ function Home() {
                 <CtaContent>
                     <ButtonCta as="a" href="https://wa.me/5531973639785?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20aquisi%C3%A7%C3%A3o%20do%20produto." target="_blank"><span>SAIBA MAIS</span></ButtonCta>
                 </CtaContent>
-                <FormContent>
+                <FormContent id="us">
                     <div className="form_template">
                         <i><PiCertificateLight /> </i>
                         <p>O APC <strong>AP001</strong> é formulado para <strong>revitalizar o aspecto visual das aeronaves</strong>, selecionamos ingredientes de alta performance, passando por um rigoroso processo de pesquisas e experiências realizados na execução dos procedimentos, com a segurança e bem-estar dos padrões de qualidade <strong>AEROPOLIMENTO</strong>. </p>
                     </div>
                 </FormContent>
                 <Footer>
+                    <p>13 anos de dedicação à aviação.</p>
                     <img src={logoap} alt="logoap" />
                     <span>
                         <Typewriter
@@ -287,9 +285,10 @@ function Home() {
                             delaySpeed={1000}
                         />
                     </span>
-                    <Icons>
-                        <a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaInstagram /></a><a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaXTwitter /></a><a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank"><FaTiktok /></a>
-                    </Icons>
+                    <a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank">
+                        <img src={instagram} alt="logoap" />
+                    </a>
+                    <span>ACESSE NOSSO INSTAGRAM</span>
                 </Footer>
                 <AuthProd>
                     <div className="sign_prod">
